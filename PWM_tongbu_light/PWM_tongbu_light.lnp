@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"pwm_tongbu_light\startup_stm32f103xb.o"
+"pwm_tongbu_light\main.o"
+"pwm_tongbu_light\gpio.o"
+"pwm_tongbu_light\tim.o"
+"pwm_tongbu_light\stm32f1xx_it.o"
+"pwm_tongbu_light\stm32f1xx_hal_msp.o"
+"pwm_tongbu_light\stm32f1xx_hal_gpio_ex.o"
+"pwm_tongbu_light\stm32f1xx_hal_tim.o"
+"pwm_tongbu_light\stm32f1xx_hal_tim_ex.o"
+"pwm_tongbu_light\stm32f1xx_hal.o"
+"pwm_tongbu_light\stm32f1xx_hal_rcc.o"
+"pwm_tongbu_light\stm32f1xx_hal_rcc_ex.o"
+"pwm_tongbu_light\stm32f1xx_hal_gpio.o"
+"pwm_tongbu_light\stm32f1xx_hal_dma.o"
+"pwm_tongbu_light\stm32f1xx_hal_cortex.o"
+"pwm_tongbu_light\stm32f1xx_hal_pwr.o"
+"pwm_tongbu_light\stm32f1xx_hal_flash.o"
+"pwm_tongbu_light\stm32f1xx_hal_flash_ex.o"
+"pwm_tongbu_light\stm32f1xx_hal_exti.o"
+"pwm_tongbu_light\system_stm32f1xx.o"
+"pwm_tongbu_light\key.o"
+--strict --scatter "PWM_tongbu_light\PWM_tongbu_light.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "PWM_tongbu_light.map" -o PWM_tongbu_light\PWM_tongbu_light.axf
